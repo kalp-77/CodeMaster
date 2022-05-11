@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ui.activities.LoginActivity"
+    android:background="#C9E6FF">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline3"
+        android:layout_marginTop="90dp"
+        android:layout_marginBottom="40dp"
+        android:text="CODEMASTER"
+        android:textColor="#09080B"
+        android:gravity="center"
+        android:textSize="45dp">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CodeChef Username?"
+            android:textSize="15sp"
+            android:layout_marginBottom="5dp"
+            android:textColor="#624C8E">
+        </TextView>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:outlineSpotShadowColor="@color/black"
+            android:hint="Username"
+            android:textColorHint="#624C8E"
+            android:outlineAmbientShadowColor="@color/black"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/nameEdtCc"
+                android:layout_width="match_parent"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content">
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CodeForces Username?"
+            android:textSize="15dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="#624C8E">
+        </TextView>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:outlineSpotShadowColor="@color/black"
+            android:hint="Username"
+            android:textColorHint="#624C8E"
+            android:outlineAmbientShadowColor="@color/black"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/nameEdtCf"
+                android:layout_width="match_parent"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content">
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Leetcode Username?"
+            android:textSize="15dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="#624C8E">
+        </TextView>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:outlineSpotShadowColor="@color/black"
+            android:hint="Username"
+            android:textColorHint="#624C8E"
+            android:outlineAmbientShadowColor="@color/black"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/nameEdtLc"
+                android:layout_width="match_parent"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content">
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Remember Me"
+            android:layout_marginTop="4dp"
+            android:id="@+id/checkBox"
+            android:textColor="@color/black" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/save"
+            android:textSize="15dp"
+            android:layout_below="@+id/inUserId"
+            android:layout_gravity=""
+            android:layout_marginTop="5dp"
+            android:text="SAVE"
+            android:textColor="#624C8E"
+            android:backgroundTint="#F6F1FF"/>
+
+    </LinearLayout>
+
+</LinearLayout>

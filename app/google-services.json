@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "681259537522",
+    "project_id": "mastercoder-e341b",
+    "storage_bucket": "mastercoder-e341b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:681259537522:android:4c66dc9224010bf0ba5eeb",
+        "android_client_info": {
+          "package_name": "com.example.mastercoderapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "681259537522-2k2l5t7t0thbblt05oksomputo4ujc61.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXq5Md8HR_hiN_xR9JouYzh3AVIiZITeg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "681259537522-2k2l5t7t0thbblt05oksomputo4ujc61.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

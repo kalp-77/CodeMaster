@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/codeChefFragment"
+        android:name="com.example.mastercoderapp.ui.fragments.CodeChefFragment"
+        android:label="CodeChefFragment" >
+        <action
+            android:id="@+id/action_codeChefFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.mastercoderapp.ui.fragments.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_codeChefFragment"
+            app:destination="@id/codeChefFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_leetCodeFragment"
+            app:destination="@id/leetCodeFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_topCoderFragment"
+            app:destination="@id/topCoderFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_atCoderFragment"
+            app:destination="@id/atCoderFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_hackerEarthFragment"
+            app:destination="@id/hackerEarthFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_codeForcesFragment"
+            app:destination="@id/codeForcesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/leetCodeFragment"
+        android:name="com.example.mastercoderapp.ui.fragments.LeetCodeFragment"
+        android:label="LeetCodeFragment" >
+        <action
+            android:id="@+id/action_leetCodeFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/topCoderFragment"
+        android:name="com.example.mastercoderapp.ui.fragments.TopCoderFragment"
+        android:label="top_coder_fragment"
+        tools:layout="@layout/top_coder_fragment" >
+        <action
+            android:id="@+id/action_topCoderFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/atCoderFragment"
+        android:name="com.example.mastercoderapp.ui.fragments.AtCoderFragment"
+        android:label="AtCoderFragment" >
+        <action
+            android:id="@+id/action_atCoderFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/hackerEarthFragment"
+        android:name="com.example.mastercoderapp.ui.fragments.HackerEarthFragment"
+        android:label="HackerEarthFragment" >
+        <action
+            android:id="@+id/action_hackerEarthFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/codeForcesFragment"
+        android:name="com.example.mastercoderapp.ui.fragments.CodeForcesFragment"
+        android:label="CodeForcesFragment" >
+        <action
+            android:id="@+id/action_codeForcesFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+</navigation>

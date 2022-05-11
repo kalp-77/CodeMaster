@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/gradient_background"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/RL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+
+                <ImageView
+                    android:id="@+id/ham"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:padding="20dp"
+                    android:src="@drawable/ic_baseline_notes_24">
+
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/ham"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginEnd="40dp"
+                    android:fontFamily="@font/bangers"
+                    android:text="CODEMASTER"
+                    android:textAlignment="center"
+                    android:textSize="35dp">
+
+                </TextView>
+
+            </RelativeLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/RL">
+
+                <androidx.gridlayout.widget.GridLayout
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:paddingEnd="20dp"
+                    android:paddingStart="20dp"
+                    app:columnCount="2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:rowCount="3">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/btnCC"
+                        android:layout_width="0dp"
+                        android:layout_margin="5dp"
+                        app:cardCornerRadius="7dp"
+                        app:cardElevation="0dp"
+                        app:layout_columnWeight="1"
+                        app:layout_rowWeight="1">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/codechef"
+                                android:layout_centerInParent="true" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true">
+
+                            </TextView>
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/btnCF"
+                        android:layout_width="0dp"
+                        android:layout_margin="5dp"
+                        app:cardCornerRadius="7dp"
+                        app:cardElevation="0dp"
+                        app:layout_columnWeight="1"
+                        app:layout_rowWeight="1">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/codeforces2" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true">
+
+                            </TextView>
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/btnLC"
+                        android:layout_width="0dp"
+                        android:layout_margin="5dp"
+                        app:cardCornerRadius="7dp"
+                        app:cardElevation="0dp"
+                        app:layout_columnWeight="1"
+                        app:layout_rowWeight="1">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/leetcode"
+                                android:layout_centerInParent="true" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true">
+
+                            </TextView>
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/btnHE"
+                        android:layout_width="0dp"
+                        android:layout_margin="5dp"
+                        app:cardCornerRadius="7dp"
+                        app:cardElevation="1dp"
+                        app:layout_columnWeight="1"
+                        app:layout_rowWeight="1">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/hackerearth"
+                                android:layout_centerInParent="true" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true">
+
+                            </TextView>
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/btnTC"
+                        android:layout_width="0dp"
+                        android:layout_margin="5dp"
+                        app:cardCornerRadius="7dp"
+                        app:cardElevation="0dp"
+                        app:layout_columnWeight="1"
+                        app:layout_rowWeight="1">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/top_coder" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true">
+
+                            </TextView>
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/btnAT"
+                        android:layout_width="0dp"
+                        android:layout_margin="5dp"
+                        app:cardCornerRadius="7dp"
+                        app:cardElevation="0dp"
+                        app:layout_columnWeight="1"
+                        app:layout_rowWeight="1">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/atcoder"
+                                android:layout_centerInParent="true" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true">
+
+                            </TextView>
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    
+                </androidx.gridlayout.widget.GridLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </RelativeLayout>
+
+    </FrameLayout>
+</layout>
